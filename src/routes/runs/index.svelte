@@ -19,11 +19,16 @@
     td{
         padding:2%;
     }
+
+    tbody tr {
+        height: 100px;
+    }
 </style>
 
 <script>
     import RunsTable from "../../components/RunsTable.svelte";
 import SlugViewer from "../../components/SlugViewer.svelte";
+import Slug from "../blog/[slug].svelte";
     export let runs;
 </script>
 
@@ -50,6 +55,7 @@ import SlugViewer from "../../components/SlugViewer.svelte";
                 <td width="20%">{row.startDate}</td>
                 <td width="20%">{row.status}</td>
                 <td width="20%" colspan="2" >
+                    <SlugViewer slug={row.slug} />
                     <a href="/runs/{row.id}">View Report</a>
                 </td>
       

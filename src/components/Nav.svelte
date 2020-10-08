@@ -17,5 +17,5 @@
 </style>
 
 <div class="title">
-	<h1>{pageTitle ? pageTitle : 'No Page'}</h1>
+	<h1>{pageTitle ? pageTitle : 'Home'}</h1>
 </div>

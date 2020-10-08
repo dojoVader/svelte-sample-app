@@ -1,6 +1,7 @@
 <script>
 	import Nav from '../components/Nav.svelte';
 	import Sidebar from '../components/Sidebar.svelte';
+	export let segment;
 
 </script>
 
@@ -15,7 +16,7 @@
 	}
 </style>
 <Sidebar />
-<Nav/>
+<Nav pageTitle={segment}/>
 
 
 <main>
