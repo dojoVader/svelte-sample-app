@@ -56,7 +56,7 @@ import Slug from "../blog/[slug].svelte";
                 <td width="20%">{row.status}</td>
                 <td width="20%" colspan="2" >
                     <SlugViewer slug={row.slug} />
-                    <a href="/runs/{row.id}">View Report</a>
+                   
                 </td>
       
             </tr>
